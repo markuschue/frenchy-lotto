@@ -6,12 +6,14 @@ import {
 } from "react-router-dom";
 import Header from "../components/layout/Header";
 import HomePage from "../components/layout/HomePage";
+import LottoPage from "../components/layout/LottoPage";
 
 const Router = () => {
 	const router = createBrowserRouter(
 		createRoutesFromElements(
 			<Route path="/" element={<Header />}>
 				<Route index element={<HomePage />} />
+				<Route path="/lotto/:lottoType" element={<LottoPage />} />
 				<Route path="*" element={<h1>404</h1>} />
 			</Route>,
 		),
