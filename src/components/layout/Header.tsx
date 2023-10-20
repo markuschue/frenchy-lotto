@@ -6,6 +6,6 @@ const Header = () => {
 			<Outlet />
 		</>
 	);
-}
+};
 
 export default Header;
