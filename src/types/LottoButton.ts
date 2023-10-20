@@ -1,6 +1,5 @@
 type LottoButton = {
-	id: number;
-	label: string;
+	name: string;
 	route: string;
 };
 
