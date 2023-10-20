@@ -1,6 +1,7 @@
 import Carousel from "react-material-ui-carousel";
-import jsonFile from "../assets/images.json";
-import LottoButton from "../types/LottoButton";
+import jsonFile from "../../assets/images.json";
+import LottoButton from "../../types/LottoButton";
+
 const HomePage = () => {
 	const buttons: LottoButton[] = [
 		{ name: "Powerball", route: "/power-ball" },
@@ -10,6 +11,7 @@ const HomePage = () => {
 		{ name: "Primitiva", route: "/primitiva" },
 		{ name: "Bonoloto", route: "/bono-loto" },
 	];
+
 	return (
 		<>
 			<Carousel>

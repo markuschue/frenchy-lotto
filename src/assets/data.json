@@ -1,0 +1,10 @@
+{
+	"lottoTypes": [
+		"Powerball",
+		"Megamillions",
+		"Euromillions",
+		"Eurojackpot",
+		"Primitiva",
+		"Bonoloto"
+	]
+}

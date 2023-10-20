@@ -1,5 +1,7 @@
+import LottoType from "./LottoType";
+
 type LottoButton = {
-	name: string;
+	name: LottoType;
 	route: string;
 };
 
