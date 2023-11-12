@@ -26,6 +26,12 @@ const HomePage = () => {
 					<img key={image} src={image} />
 				))}
 			</Carousel>
+			<div className="">
+				<h1 className="text-center text-3xl font-bold">
+					Generate and copy your Frenchy lottery numbers for your
+					preferred lottery
+				</h1>
+			</div>
 			<div className="flex gap-5 justify-center mb-10">
 				{buttons.map((button) => (
 					<Button
@@ -33,7 +39,6 @@ const HomePage = () => {
 						variant="contained"
 						className="w-40"
 						size="large"
-						type="button"
 						onClick={() => handleClick(button.route)}
 					>
 						{button.name}
