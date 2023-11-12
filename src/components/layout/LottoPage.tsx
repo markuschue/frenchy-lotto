@@ -43,17 +43,19 @@ const LottoPage = () => {
 				<h1 className="text-3xl font-bold">{currentLotto}</h1>
 				<h2>This is your result</h2>
 			</div>
-			<div
-				className={`grid grid-cols-${lottoResult?.numbers?.length} items-center justify-items-center`}
-			>
-				{lottoResult?.numbers?.map((number) => (
-					<img
-						key={uuid()}
-						src={`/images/numbers/${number}.png`}
-						alt={number.toString()}
-					/>
-				))}
-			</div>
+			{lottoResult?.numbers && (
+				<div
+					className={`grid grid-cols-${lottoResult?.numbers?.length} items-center justify-items-center`}
+				>
+					{lottoResult?.numbers?.map((number) => (
+						<img
+							key={uuid()}
+							src={`/images/numbers/${number}.png`}
+							alt={number.toString()}
+						/>
+					))}
+				</div>
+			)}
 			<div className="flex justify-around ">
 				<Button
 					variant="contained"
