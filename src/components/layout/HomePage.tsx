@@ -2,6 +2,7 @@ import Carousel from "react-material-ui-carousel";
 import jsonFile from "../../assets/images.json";
 import LottoButton from "../../types/LottoButton";
 import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 const HomePage = () => {
 	const navigate = useNavigate();
 
@@ -19,24 +20,27 @@ const HomePage = () => {
 	};
 
 	return (
-		<>
-			<Carousel>
+		<div className="flex flex-col gap-10">
+			<Carousel className="h-[100vh]">
 				{jsonFile.dogs.map((image) => (
 					<img key={image} src={image} />
 				))}
 			</Carousel>
-			<div>
+			<div className="flex gap-5 justify-center mb-10">
 				{buttons.map((button) => (
-					<button
+					<Button
 						key={button.name}
+						variant="contained"
+						className="w-40"
+						size="large"
 						type="button"
 						onClick={() => handleClick(button.route)}
 					>
 						{button.name}
-					</button>
+					</Button>
 				))}
 			</div>
-		</>
+		</div>
 	);
 };
 
