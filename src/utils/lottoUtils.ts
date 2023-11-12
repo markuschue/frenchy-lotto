@@ -1,4 +1,4 @@
-import { LottoResult } from "../types/LottoType";
+import LottoType, { LottoResult, LottoTypes } from "../types/LottoType";
 
 const getRandomIntInclusive = (min: number, max: number) => {
 	min = Math.ceil(min);
@@ -75,7 +75,7 @@ export const primitva = () => {
 	return Presult;
 };
 
-export const bonnoLotto = () => {
+export const bonoloto = () => {
 	const BLresult: LottoResult = {
 		numbers: [],
 		stars: [],
@@ -85,4 +85,23 @@ export const bonnoLotto = () => {
 		BLresult.numbers.push(Math.floor(getRandomIntInclusive(1, 49)));
 	}
 	return BLresult;
+};
+
+export const getLotto = (lottoType: LottoType) => {
+	switch (lottoType) {
+		case LottoTypes.PowerBall:
+			return powerBall();
+		case LottoTypes.MegaMillions:
+			return megaMillions();
+		case LottoTypes.EuroMillions:
+			return euroMillions();
+		case LottoTypes.EuroJackpot:
+			return euroJackpot();
+		case LottoTypes.Primitiva:
+			return primitva();
+		case LottoTypes.Bonoloto:
+			return bonoloto();
+		default:
+			return powerBall();
+	}
 };
