@@ -4,6 +4,7 @@ import LottoButton from "../../types/LottoButton";
 import { useNavigate } from "react-router-dom";
 const HomePage = () => {
 	const navigate = useNavigate();
+
 	const buttons: LottoButton[] = [
 		{ name: "Powerball", route: "/powerball" },
 		{ name: "Megamillions", route: "/megamillions" },
@@ -12,9 +13,11 @@ const HomePage = () => {
 		{ name: "Primitiva", route: "/primitiva" },
 		{ name: "Bonoloto", route: "/bonoloto" },
 	];
+
 	const handleClick = (route: string) => {
 		navigate("/lotto" + route);
 	};
+
 	return (
 		<>
 			<Carousel>

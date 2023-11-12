@@ -12,7 +12,7 @@ const LottoPage = () => {
 				.map((lottoType) => lottoType.toLowerCase())
 				.includes(lottoType?.toLowerCase() ?? "")
 		) {
-			navigate("404");
+			navigate("404", { replace: true });
 		}
 	}, [lottoType]);
 
