@@ -1,20 +1,21 @@
 import {
 	Route,
 	RouterProvider,
-	createBrowserRouter,
+	createHashRouter,
 	createRoutesFromElements,
 } from "react-router-dom";
 import Header from "../components/layout/Header";
 import HomePage from "../components/layout/HomePage";
 import LottoPage from "../components/layout/LottoPage";
+import NotFoundPage from "../components/layout/NotFoundPage";
 
 const Router = () => {
-	const router = createBrowserRouter(
+	const router = createHashRouter(
 		createRoutesFromElements(
 			<Route path="/" element={<Header />}>
 				<Route index element={<HomePage />} />
 				<Route path="/lotto/:lottoType" element={<LottoPage />} />
-				<Route path="*" element={<h1>404</h1>} />
+				<Route path="*" element={<NotFoundPage />} />
 			</Route>,
 		),
 	);

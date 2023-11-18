@@ -3,10 +3,10 @@ import { useNavigate, useParams } from "react-router-dom";
 import { lottoTypes } from "../../assets/data.json";
 import LottoType, { LottoResult, LottoTypes } from "../../types/LottoType";
 import { Button } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import { getLotto } from "../../utils/lottoAlgorithms";
 import uuid from "react-uuid";
+import ReturnHomeButton from "../atomic/ReturnHomeButton";
 
 const LottoPage = () => {
 	const { lottoType } = useParams();
@@ -98,15 +98,7 @@ const LottoPage = () => {
 				</div>
 			)}
 			<div className="flex justify-around ">
-				<Button
-					variant="contained"
-					className="w-40"
-					size="large"
-					startIcon={<ArrowBackIcon />}
-					onClick={() => navigate("/")}
-				>
-					Home
-				</Button>
+				<ReturnHomeButton />
 				<Button
 					variant="contained"
 					className="w-40"
