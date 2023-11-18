@@ -13,8 +13,8 @@ type LottoType = (typeof lottoTypes)[number];
 
 export type LottoResult = {
 	numbers: number[];
-	stars: number[];
-	numComp: number;
+	additional: number[];
+	refund?: number;
 };
 
 export default LottoType;
