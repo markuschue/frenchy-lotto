@@ -543,6 +543,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -552,6 +556,10 @@ video {
 }
 
 .h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-screen {
   height: 100vh;
 }
 
@@ -605,6 +613,10 @@ video {
   padding: 1.25rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -612,6 +624,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .font-bold {
