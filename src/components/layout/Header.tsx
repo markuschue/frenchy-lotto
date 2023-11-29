@@ -1,9 +1,13 @@
 import { Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 const Header = () => {
 	return (
-		<div className="bg-[#131516] text-[#fff] min-h-[100vh]">
-			<Outlet />
+		<div className="text-[#fff]">
+			<div className="bg-[#131516] min-h-[96vh]">
+				<Outlet />
+			</div>
+			<Footer />
 		</div>
 	);
 };

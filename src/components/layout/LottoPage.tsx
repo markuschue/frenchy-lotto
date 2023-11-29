@@ -63,7 +63,7 @@ const LottoPage = () => {
 	}, [lottoType]);
 
 	return (
-		<div className="p-5 gap-5">
+		<div className="flex flex-col justify-around p-5 gap-5 min-h-[96vh]">
 			<div className="flex flex-col text-center gap-3">
 				<h1 className="text-3xl font-bold">{currentLotto}</h1>
 				<h2>This is your result</h2>
