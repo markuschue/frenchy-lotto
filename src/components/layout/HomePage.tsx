@@ -23,7 +23,7 @@ const HomePage = () => {
 		<div className="flex flex-col gap-10">
 			<Carousel className="h-[100vh]">
 				{jsonFile.dogs.map((image) => (
-					<img key={image} src={image} />
+					<img key={image} src={import.meta.env.BASE_URL + image} />
 				))}
 			</Carousel>
 			<div className="">

@@ -27,14 +27,20 @@ const LottoPage = () => {
 
 	const getAdditionalImageSource = (lotto: LottoType, number: number) => {
 		if (lotto === LottoTypes.PowerBall) {
-			return `/images/numbersStarPB/${number}-estrella-PBall-rojo.png`;
+			return (
+				import.meta.env.BASE_URL +
+				`/images/numbersStarPB/${number}-estrella-PBall-rojo.png`
+			);
 		} else if (
 			lotto === LottoTypes.MegaMillions ||
 			lotto === LottoTypes.EuroMillions
 		) {
-			return `/images/numbersStarMM/${number}-estrella-MM.png`;
+			return (
+				import.meta.env.BASE_URL +
+				`/images/numbersStarMM/${number}-estrella-MM.png`
+			);
 		}
-		return `/images/numbers/${number}.png`;
+		return import.meta.env.BASE_URL + `/images/numbers/${number}.png`;
 	};
 
 	useEffect(() => {
@@ -73,7 +79,10 @@ const LottoPage = () => {
 						{lottoResult?.numbers?.map((number) => (
 							<img
 								key={uuid()}
-								src={`/images/numbers/${number}.png`}
+								src={
+									import.meta.env.BASE_URL +
+									`/images/numbers/${number}.png`
+								}
 								alt={number.toString()}
 							/>
 						))}
@@ -90,7 +99,10 @@ const LottoPage = () => {
 						{lottoResult?.refund && (
 							<img
 								key={uuid()}
-								src={`/images/numbersStarMM/${lottoResult?.refund}-estrella-MM.png`}
+								src={
+									import.meta.env.BASE_URL +
+									`/images/numbersStarMM/${lottoResult?.refund}-estrella-MM.png`
+								}
 								alt={lottoResult?.refund.toString()}
 							/>
 						)}
