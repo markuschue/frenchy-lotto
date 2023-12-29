@@ -15,6 +15,9 @@ const Router = () => {
 			<Route path="/" element={<Header />}>
 				<Route index element={<HomePage />} />
 				<Route path="/lotto/:lottoType" element={<LottoPage />} />
+				<Route path="/about" element={<div>About</div>} />
+				<Route path="/privacy-policy" element={<div>Privacy</div>} />
+				<Route path="/cookie-policy" element={<div>Cookie</div>} />
 				<Route path="*" element={<NotFoundPage />} />
 			</Route>,
 		),
