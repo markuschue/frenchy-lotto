@@ -33,7 +33,8 @@ const LottoPage = () => {
 			);
 		} else if (
 			lotto === LottoTypes.MegaMillions ||
-			lotto === LottoTypes.EuroMillions
+			lotto === LottoTypes.EuroMillions ||
+			lotto === LottoTypes.EuroJackpot
 		) {
 			return (
 				import.meta.env.BASE_URL +

@@ -53,7 +53,7 @@ export const euroJackpot = () => {
 export const primitva = () => {
 	const Presult: LottoResult = {
 		numbers: generateUniqueNumbers(1, 49, 6),
-		additional: [getRandomIntInclusive(1, 49)],
+		additional: [],
 		refund: getRandomIntInclusive(0, 9),
 	};
 	return Presult;
@@ -62,8 +62,7 @@ export const primitva = () => {
 export const bonoloto = () => {
 	const BLresult: LottoResult = {
 		numbers: generateUniqueNumbers(1, 49, 6),
-		additional: [getRandomIntInclusive(1, 49)],
-		refund: getRandomIntInclusive(0, 9),
+		additional: [],
 	};
 	return BLresult;
 };

@@ -21,7 +21,7 @@ const HomePage = () => {
 
 	return (
 		<div className="flex flex-col gap-10">
-			<Carousel className="">
+			<Carousel interval={1500} className="">
 				{jsonFile.dogs.map((image) => (
 					<img
 						className="h-[100vh] w-full object-cover"
