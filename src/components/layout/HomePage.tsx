@@ -24,6 +24,7 @@ const HomePage = () => {
 			<Carousel interval={1500} className="">
 				{jsonFile.dogs.map((image) => (
 					<img
+						alt="dog"
 						className="h-[100vh] w-full object-cover"
 						key={image}
 						src={import.meta.env.BASE_URL + image}
