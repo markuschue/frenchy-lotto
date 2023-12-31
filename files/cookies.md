@@ -1,1 +1,1 @@
-## Cookies
+## Cookie Policy
