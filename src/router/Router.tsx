@@ -8,6 +8,7 @@ import Header from "../components/layout/Header";
 import HomePage from "../components/layout/HomePage";
 import LottoPage from "../components/layout/LottoPage";
 import NotFoundPage from "../components/layout/NotFoundPage";
+import { MarkdownTemplate } from "../components/layout/MarkdownTemplate";
 
 const Router = () => {
 	const router = createHashRouter(
@@ -15,9 +16,18 @@ const Router = () => {
 			<Route path="/" element={<Header />}>
 				<Route index element={<HomePage />} />
 				<Route path="/lotto/:lottoType" element={<LottoPage />} />
-				<Route path="/about" element={<div>About</div>} />
-				<Route path="/privacy-policy" element={<div>Privacy</div>} />
-				<Route path="/cookie-policy" element={<div>Cookie</div>} />
+				<Route
+					path="/about"
+					element={<MarkdownTemplate filename="about.md" />}
+				/>
+				<Route
+					path="/privacy-policy"
+					element={<MarkdownTemplate filename="privacy.md" />}
+				/>
+				<Route
+					path="/cookie-policy"
+					element={<MarkdownTemplate filename="cookies.md" />}
+				/>
 				<Route path="*" element={<NotFoundPage />} />
 			</Route>,
 		),
