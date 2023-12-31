@@ -28,6 +28,10 @@ const Router = () => {
 					path="/cookie-policy"
 					element={<MarkdownTemplate filename="cookies.md" />}
 				/>
+				<Route
+					path="/shopping"
+					element={<MarkdownTemplate filename="shopping.md" />}
+				/>
 				<Route path="*" element={<NotFoundPage />} />
 			</Route>,
 		),

@@ -14,6 +14,12 @@ const Footer = () => {
 				About
 			</a>
 			<a
+				href={import.meta.env.BASE_URL + "#/shopping"}
+				className="flex w-full justify-center"
+			>
+				Shopping and Donations
+			</a>
+			<a
 				href={import.meta.env.BASE_URL + "#/privacy-policy"}
 				className="flex w-full justify-center"
 			>
