@@ -5,6 +5,9 @@ on:
         branches:
             - main
 
+permissions:
+    contents: write
+
 jobs:
     deploy:
         runs-on: ubuntu-latest
@@ -22,6 +25,7 @@ jobs:
               run: |
                   git config --global user.email "markuschue@gmail.com"
                   git config --global user.name "markuschue"
+                  git remote set-url origin https://markuschue${{ secrets.GITHUB_TOKEN }}@github.com/markuschue/frenchy-lotto.git
 
             - name: Install dependencies
               run: npm install
