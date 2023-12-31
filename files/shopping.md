@@ -1,1 +1,1 @@
-## Shopping
+## Shopping and donations
