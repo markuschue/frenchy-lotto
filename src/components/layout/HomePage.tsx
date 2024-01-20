@@ -34,7 +34,7 @@ const HomePage = () => {
 			<div className="min-h-[40vh] flex flex-col justify-around mb-10">
 				<h1 className="text-center text-3xl font-bold">
 					Generate and copy your Frenchy lottery numbers for your
-					preferred lottery.Remember that you have to be of legal age to play the lottery.
+					preferred lottery.Remember that you have to be of **legal age** to play the lottery.
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5 justify-items-center">
 					{buttons.map((button) => (
 						<Button
