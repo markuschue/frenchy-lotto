@@ -4,5 +4,5 @@ Meet frenchy!
 
 # Testing
 
-This is a test
+Please note that in order to participate in any lottery, you must be of legal age. Be responsible. 
 **Bold text**
