@@ -31,7 +31,7 @@ const HomePage = () => {
 					/>
 				))}
 			</Carousel>
-			<div className="min-h-[40vh] flex flex-col justify-around gap-10 mb-10">
+			<div className="min-h-[40vh] flex flex-col justify-around mb-10">
 				<h1 className="text-center text-3xl font-bold">
 					Generate and copy your Frenchy lottery numbers for your
 					preferred lottery

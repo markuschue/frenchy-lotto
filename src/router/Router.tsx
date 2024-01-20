@@ -21,16 +21,12 @@ const Router = () => {
 					element={<MarkdownTemplate filename="about.md" />}
 				/>
 				<Route
-					path="/privacy-policy"
+					path="/privacy"
 					element={<MarkdownTemplate filename="privacy.md" />}
 				/>
 				<Route
-					path="/cookie-policy"
-					element={<MarkdownTemplate filename="cookies.md" />}
-				/>
-				<Route
-					path="/shopping"
-					element={<MarkdownTemplate filename="shopping.md" />}
+					path="/donations"
+					element={<MarkdownTemplate filename="donations.md" />}
 				/>
 				<Route path="*" element={<NotFoundPage />} />
 			</Route>,

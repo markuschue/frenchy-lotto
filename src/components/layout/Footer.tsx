@@ -5,7 +5,7 @@ const Footer = () => {
 				href={import.meta.env.BASE_URL}
 				className="flex w-full justify-center"
 			>
-				LottoPoop, {new Date().getFullYear()}
+				© LottoPoop, {new Date().getFullYear()}
 			</a>
 			<a
 				href={import.meta.env.BASE_URL + "#/about"}
@@ -14,22 +14,16 @@ const Footer = () => {
 				About
 			</a>
 			<a
-				href={import.meta.env.BASE_URL + "#/shopping"}
+				href={import.meta.env.BASE_URL + "#/donations"}
 				className="flex w-full justify-center"
 			>
-				Shopping and Donations
+				Donations
 			</a>
 			<a
-				href={import.meta.env.BASE_URL + "#/privacy-policy"}
+				href={import.meta.env.BASE_URL + "#/privacy"}
 				className="flex w-full justify-center"
 			>
 				Privacy Policy
-			</a>
-			<a
-				href={import.meta.env.BASE_URL + "#/cookie-policy"}
-				className="flex w-full justify-center"
-			>
-				Cookie Policy
 			</a>
 		</footer>
 	);

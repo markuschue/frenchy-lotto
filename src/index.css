@@ -37,3 +37,17 @@ h4 {
 h5 {
 	font-size: 1.25rem;
 }
+
+.markdown p {
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5 {
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}

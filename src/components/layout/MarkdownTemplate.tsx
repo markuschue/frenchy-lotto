@@ -10,8 +10,11 @@ export const MarkdownTemplate = ({ filename }: { filename: string }) => {
 		.then((text) => setMarkdown(text));
 
 	return (
-		<div className="p-10 w-full h-full">
-			<Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
-		</div>
+		<Markdown
+			className="markdown p-10 w-full h-full overflow-auto"
+			remarkPlugins={[remarkGfm]}
+		>
+			{markdown}
+		</Markdown>
 	);
 };
