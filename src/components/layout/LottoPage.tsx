@@ -7,6 +7,7 @@ import RefreshIcon from "@mui/icons-material/Refresh";
 import { getLotto } from "../../utils/lottoAlgorithms";
 import uuid from "react-uuid";
 import ReturnHomeButton from "../atomic/ReturnHomeButton";
+import { useTranslation } from "react-i18next";
 
 const LottoPage = () => {
 	const { lottoType } = useParams();
@@ -14,6 +15,8 @@ const LottoPage = () => {
 	const [currentLotto, setCurrentLotto] = useState<LottoType | null>(null);
 	const [lottoResult, setLottoResult] = useState<LottoResult | null>(null);
 	const [gridSize, setGridSize] = useState<number | null>(null);
+
+	const { t } = useTranslation();
 
 	const generateResults = (lotto: LottoType) => {
 		const obtainedResult = getLotto(lotto);
@@ -67,7 +70,7 @@ const LottoPage = () => {
 		<div className="flex flex-col justify-around p-5 gap-5 min-h-[96vh]">
 			<div className="flex flex-col text-center gap-3">
 				<h1 className="text-3xl font-bold">{currentLotto}</h1>
-				<h2>This is your result</h2>
+				<h2>{t("result")}</h2>
 			</div>
 			{lottoType && gridSize && (
 				<div className="flex justify-center my-10">

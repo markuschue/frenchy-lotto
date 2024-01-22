@@ -3,8 +3,11 @@ import jsonFile from "../../assets/images.json";
 import LottoButton from "../../types/LottoButton";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import { useTranslation } from "react-i18next";
 const HomePage = () => {
 	const navigate = useNavigate();
+
+	const { t } = useTranslation();
 
 	const buttons: LottoButton[] = [
 		{ name: "Powerball", route: "/powerball" },
@@ -33,8 +36,8 @@ const HomePage = () => {
 			</Carousel>
 			<div className="min-h-[40vh] flex flex-col justify-around mb-10">
 				<h1 className="text-center text-3xl font-bold">
-					Generate and copy your Frenchy lottery numbers for your
-					preferred lottery
+					{t("homeTitle")}
+				</h1>
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5 justify-items-center">
 					{buttons.map((button) => (
 						<Button
