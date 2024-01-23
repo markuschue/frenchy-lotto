@@ -24,4 +24,4 @@ We reserve the right to update or modify this privacy policy at any time. Any ch
 
 Last Updated: 2024-01-20
 
-![Frenchy bath](public/images/moneyDoug6.png)
+![Frenchy office](https://github.com/markuschue/frenchy-lotto/blob/main/public/images/moneyDoug6.png)
