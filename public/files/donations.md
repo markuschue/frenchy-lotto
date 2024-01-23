@@ -12,4 +12,4 @@ Feel free to try; we don't charge anything for generating your numbers on lottop
 Thank you very much, and we wish you the best possible luck. And always remember to play responsibly.
 
 See you soon, Frenchy
-![Frenchy-bath](https://github.com/markuschue/frenchy-lotto/blob/main/public/images/frenchy.png)
+![Frenchy-bath](images/frenchy.png)
