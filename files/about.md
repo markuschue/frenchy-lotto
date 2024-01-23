@@ -13,6 +13,7 @@ A key element for interpreting this superstition is the foot used for the action
 #
 It is important to note that superstitions lack scientific basis, and their meaning can vary depending on culture and individual beliefs. Believing in the good luck associated with stepping on dog poop is ultimately a personal and subjective matter.
 
-## About
+## NOTICE
+"Remember that to play the lottery in most countries, you must be of legal age. Please check the gambling laws in your country and if they allow you to participate, always do so responsibly. Gambling addiction is a dangerous condition that requires treatment. If you feel you may be falling into it, seek help as soon as possible. Good luck."
 Meet frenchy!
 ![Meet frenchy!](images/moneyDoug.png)
