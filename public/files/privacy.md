@@ -23,3 +23,4 @@ Our website may contain links to third-party websites. Please note that we are n
 We reserve the right to update or modify this privacy policy at any time. Any changes will be reflected on this page, and we encourage you to check back periodically for the latest information.
 
 Last Updated: 2024-01-20
+![Frenchy bath](public/images/moneyDoug6.png)
